@@ -262,7 +262,7 @@ section .title hr{
 
 
 /* ESTILO NOSOTROS */
-#grillanosotros{
+/* #grillanosotros{
     display: grid;
     grid-template-areas:
     "title title title title"
@@ -288,6 +288,7 @@ div#col2 {
 h3#subtitle {
     grid-area: subtitle;
 }
+
 article#eq1{
     grid-area: eq1;
 }
@@ -299,10 +300,9 @@ article#eq3{
 }
 article#eq4{
     grid-area: eq4;
-}
-#nosotros article{
+} <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
+#nosotros article {
     justify-content: center;
-    width: 100%;
     text-align: center;
 }
 #nosotros h3 {
@@ -322,35 +322,33 @@ article#eq4{
     background: #3a3a3a; 
 }
 #equipo article img {
-    width: 300px;
+    width: 90%;
     border: solid 2px #ffce00;
     border-radius: 50%;
     padding: 15px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    float: left;
+    margin: auto;
+    /* float: left;<-- ESTILO ELIMINADO POR BOOPSTRAP --> */
 }
 #equipo article {
     background: #3a3a3a;
     color: #a4a4a4;   
     display: inline-block;
     width: 100%;
-    padding-bottom: 30px;
-    margin-top: 40px;
+    padding: 30px 0px;
+   /* margin-top: 40px;<-- ESTILO ELIMINADO POR BOOPSTRAP --> */
 }
 
-#equipo h3 {
-    margin-top: 30px;
+ #equipo h3 {
+    margin-top: 20px;
     display: block;
-}
-
+}  
+/*
 #equipo article p{
     margin-bottom: 20px;
     display: block;
-}
+}<-- ESTILO ELIMINADO POR BOOPSTRAP --> */
 
-#equipo article hr{
-    padding-top: 25px;
+#equipo hr{
     border-bottom: solid 2px #ffc000 !important;
     border: 0px;
 }
@@ -374,7 +372,8 @@ section#soluciones {
     background-color: #3a3a3a;
 }
 #soluciones h3 {
-    font-size: inherit;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #soluciones article {
@@ -487,6 +486,7 @@ footer hr {
 /* footer .row div {
     width: 22%;
 } <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
+
 .copyright {
     background-color: #1c1c1c;
     height: 30px;
@@ -574,9 +574,10 @@ footer hr {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+    
     /* ESTILO RESPONSIVE HEADER */
     header .preheader {
-        height: 90px;
+        height: 60px;
         text-align: center;
     }
     header .preheader h3 {
@@ -621,7 +622,8 @@ footer hr {
     width: 100%;
     }
     /* ESTILO RESPONSIVE NOSOTROS */
-    #grillanosotros{
+
+    /* #grillanosotros{
         display: grid;
         grid-template-areas:
         "title"
@@ -637,34 +639,38 @@ footer hr {
         grid-template-columns: 100%;
         grid-row-gap: 15px;
         justify-content: center;
+    } 
+    #nosotros article img {
+        width: 100%;
+        border: solid 2px #ffce00;
+        border-radius: 50%;
+        padding: 8px;
+        margin-bottom: 20px;        
+    }    
+    
+    #equipo article img {
+        width: 100%;
+        border: solid 2px #ffce00;
+        border-radius: 50%;
+        padding: 15px;
+        margin-bottom: 20px;
     }
-    #nosotros article{
+        #nosotros article{
         justify-content: center;
         width: 100%;
         text-align: center;
     }
+    <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
+    
+
     #nosotros h3 {
         font-weight: 100;
         font-size: 25px;
         margin-bottom: 30px;
     }
-    #nosotros article img {
-        width: 200px;
-        border: solid 2px #ffce00;
-        border-radius: 50%;
-        padding: 8px;
-        margin-bottom: 20px;        
-    }
+
     .video iframe {
         height: 200px;
-    }
-    #equipo article img {
-        width: 300px;
-        border: solid 2px #ffce00;
-        border-radius: 50%;
-        padding: 15px;
-        margin-bottom: 20px;
-        float: right;
     }
 
     /* ESTILO RESPONSIVE SOLUCIONES */
@@ -705,6 +711,10 @@ footer hr {
     footer .row div {
     width: 100%;
     }
+    .copyright p {
+        text-align: center !important;
+        margin-bottom: 0px;
+    }
     .navbar-toggler {
         padding: 0.25rem 0.75rem;
         font-size: 1.25rem;
@@ -736,6 +746,11 @@ footer hr {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+    
+    /* ESTILO RESPONSIVE FOOTER */
+    .row .col-md-3, .col-md-3 {
+        width: 48%;
+        }
     /* ESTILO RESPONSIVE HEADER */
 /*    header nav {
         width: 20%;
@@ -765,7 +780,7 @@ footer hr {
         width: 80%;
     }
     /* ESTILO RESPONSIVE NOSOTROS */
-    #grillanosotros{
+    /* #grillanosotros{
         display: grid;
         grid-template-areas:
         "title title"
@@ -785,17 +800,19 @@ footer hr {
         width: 100%;
         text-align: center;
     }
-    #nosotros h3 {
-        font-weight: 100;
-        font-size: 25px;
-        margin-bottom: 30px;
-    }
+
     #nosotros article img {
         width: 150px;
         border: solid 2px #ffce00;
         border-radius: 50%;
         padding: 8px;
         margin-bottom: 20px;
+    }   <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
+
+    #nosotros h3 {
+        font-weight: 100;
+        font-size: 25px;
+        margin-bottom: 30px;
     }
     /* ESTILO RESPONSIVE SOLUCIONES */
     #soluciones article {
@@ -837,10 +854,14 @@ footer hr {
         margin-bottom: 20px;
     }
     /* ESTILO RESPONSIVE FOOTER */
-    footer .row div {
+    /*footer .row div {
         width: 47%;
-        }
-
+        }<-- ESTILO ELIMINADO POR BOOPSTRAP --> */
+    
+    .copyright p {
+        text-align: center !important;
+        margin-bottom: 0px;
+    }
 }
 
 /*ESCRITORIO*/
@@ -872,7 +893,7 @@ footer hr {
 
 /*ESCRITORIO FULL HD*/
 @media only screen and (min-width: 1920px) {
-    #grillanosotros{
+/*    #grillanosotros{
         display: grid;
         grid-template-areas:
         "title title title title"
@@ -885,14 +906,14 @@ footer hr {
         grid-row-gap: 15px;
         grid-column-gap: 3%;
         justify-content: center;
-    }
+    } 
     #nosotros article img {
         width: 250px;
         border: solid 2px #ffce00;
         border-radius: 50%;
         padding: 8px;
         margin-bottom: 20px;
-    }
+    } <-- Eliminado por Boopstrap --> */
 
 
 }
