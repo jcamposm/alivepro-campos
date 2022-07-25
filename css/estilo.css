@@ -543,6 +543,10 @@ footer hr {
         align-items: center;
         justify-content: center;
     } <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
+  
+    section .title a {
+        display: none;
+    }
     section .title a {
         display: none;
     }
@@ -875,4 +879,17 @@ footer hr {
     }
 
 
+}
+/* TOGGLER BOOTSTRAP*/
+@media only screen and (max-width: 990px) {
+    header nav {
+        float: none !important;
+        width: 100%;
+    }
+    .nav-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-content: center;
+        border-bottom: solid 0.5px #fff;
+    }
 }
