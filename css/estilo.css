@@ -892,4 +892,8 @@ footer hr {
         align-content: center;
         border-bottom: solid 0.5px #fff;
     }
+    
+    .navbar-collapse {
+        padding-bottom: 30px;
+    }
 }
