@@ -101,7 +101,7 @@ header .preheader {
     padding-top: 8px;
     padding-bottom: 10px;
     background-color: #4d4d4d;
-    height: 40px;
+    height: 25px;
 }
 header .preheader h3 {
     font-weight: lighter;
@@ -111,6 +111,7 @@ header .preheader h3 {
 }
 header .social {
     float: right;
+    align-content: center;
 }
 header .logo {
     background-image: url(../img/logos-aliveprobajo.png);
@@ -775,7 +776,7 @@ footer hr {
         margin-bottom: 30px;
     }
     #nosotros article img {
-        width: 230px;
+        width: 150px;
         border: solid 2px #ffce00;
         border-radius: 50%;
         padding: 8px;
@@ -871,7 +872,7 @@ footer hr {
         justify-content: center;
     }
     #nosotros article img {
-        width: 350px;
+        width: 250px;
         border: solid 2px #ffce00;
         border-radius: 50%;
         padding: 8px;
