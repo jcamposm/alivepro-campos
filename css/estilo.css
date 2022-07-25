@@ -37,7 +37,8 @@ body {
     ;
     grid-template-columns: 100%;
 }
- /* .container {
+
+/* .container {
     padding-left: 10%;
     padding-right: 10%; 
     padding-top: 2rem;
@@ -52,6 +53,16 @@ body {
 .espaciado {
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.row div, .row article {
+    box-sizing: border-box !important;
 }
 
 /* .row {
@@ -117,7 +128,7 @@ header .logo {
 }
 header nav {
     float: left;
-     width: 100%;
+    width: 100%;
 }
 /* header nav {
     float: right;
@@ -245,6 +256,7 @@ section .title hr{
     margin-top: 5px;
     border-bottom: solid 2px #ffc000 !important;
     border: 0px;
+    overflow: hidden;
 }
 
 
@@ -360,8 +372,11 @@ section#soluciones {
 #soluciones {
     background-color: #3a3a3a;
 }
+#soluciones h3 {
+    font-size: inherit;
+}
+
 #soluciones article {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 30%;
@@ -464,9 +479,13 @@ footer {
     background-color: #3a3a3a;
 }
 
-footer .row div {
-    width: 22%;
+footer hr {
+    border-bottom: solid 1px #FFF;
 }
+
+/* footer .row div {
+    width: 22%;
+} <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
 .copyright {
     background-color: #1c1c1c;
     height: 30px;

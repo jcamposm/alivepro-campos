@@ -70,47 +70,48 @@
     <!-- SECCIÓN 2 - NOSOTROS -->  
 
     <section id="nosotros">    
-        <div id="grillanosotros" class="container espaciado">
-            <div id="title" class="title">
+
+        <div class="container espaciado">
+            <div class="title">
                 <h2>Quienes Somos</h2>
                 <a href="./nosotros.html"><i>Ir a Nosotros</i></a>
                 <hr>
             </div>
-
-            <div id="col1">
+            <div class="row">
+            <div class="col-md-6">
                 <p>Somos una empresa joven, dedicada a la producción técnica, asesorías y capacitaciones a técnicos apasionados. Contamos con un equipo de excelencia con una gran trayectoria, Enfocados a la perfección y a soluciones a todo tipo de problemas.<br><br>
                 Cuidamos cada detalle, asumiendo como nuestros los objetivos y la ilusión de nuestros clientes, para obtener un resultado de alta calidad técnica ajustado al presupuesto de nuestros cliente.</p>
             </div>
         
-            <div id="col2" class="inicio">
+            <div class="inicio col-md-6">
             <iframe class="video" width="100%" src="https://www.youtube.com/embed/7vCTmv1l5Qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
             </div>
 
-            <h3 id="subtitle"> Nuestro Equipo</h3>
+            <h3 id="subtitle" class="col-md-12"> Nuestro Equipo</h3>
 
-            <article id="eq1" class="animate__animated animate__fadeInUp animate__delay-2s">
+            <article class="col-md-3 animate__animated animate__fadeInUp animate__delay-2s">
                 <img src="img/equipo-alivepro1.png" alt="">
                 <h4>Diego González García</h4>
                 <p>Descripción de roles</p>  
             </article>
-
-            <article id="eq2" class="animate__animated animate__fadeInDown animate__delay-2s">
+            <article class="col-md-3  animate__animated animate__fadeInDown animate__delay-2s">
                 <img src="img/equipo-alivepro2.png" alt="">
                 <h4>Jose Valenzuela Rojas</h4>
                 <p>Descripción de roles</p>  
             </article>
 
-            <article id="eq3" class="animate__animated animate__fadeInUp animate__delay-2s">
+            <article class="col-md-3 animate__animated animate__fadeInUp animate__delay-2s">
                 <img src="img/equipo-alivepro3.png" alt="">
                 <h4>Rodolfo Valdivia Guzmán</h4>
                 <p>Descripción de roles</p> 
             </article>
 
-            <article id="eq4" class="animate__animated animate__fadeInDown animate__delay-2s">
+            <article class="col-md-3 animate__animated animate__fadeInDown animate__delay-2s">
                 <img src="img/equipo-alivepro4.png" alt="">
                 <h4>María Esther Luengo</h4>
                 <p>Descripción de roles</p>  
             </article>
+            </div>
         </div>
     </section>  
 
@@ -122,7 +123,7 @@
             <a href="./soluciones.html"><i>Ir a Soluciones</i></a>
             <hr>
         </div>
-        <div class="row">
+        <div class="flex">
             <article>
                 <img src="img/soluciones-alivepro1.png" alt="">
                 <h3>Producción técnica y logística<br>&nbsp;</h3>
@@ -160,19 +161,19 @@
     <section id="casos-exitos">    
         <div class="container">
             <div class="row">
-                <div class="text-center">
+                <div class="col-md-3 text-center">
                 <p><span class="number">+50</span></p>
                 <p>Texto descriptivo 1</p>
                 </div>
-                <div class="text-center">
+                <div class="col-md-3 text-center">
                 <p><span class="number">+1000</span></p>
                 <p>Texto descriptivo 2</p>
                 </div>
-                <div class="text-center">
+                <div class="col-md-3 text-center">
                 <p><span class="number">+7</span></p>
                 <p>Texto descriptivo 3</p>
                 </div>
-                <div class="text-center">
+                <div class="col-md-3 text-center">
                 <p><span class="number">+120</span></p>
                 <p>Texto descriptivo 4</p>
                 </div>
@@ -182,10 +183,10 @@
     
     <!-- SECCIÓN 5 - FORMULARIO DE CONTACTO -->
     <section id="contacto">  
-        <div class="container">
+        <div class="container espaciado">
     <h2>Déjanos tus datos y te contactaremos</h2>
     <form action="" method="post" enctype="text/plain">
-        <div class="row">
+        <div class="flex">
         <input name="nombre" type="text" required placeholder="Nombre completo*">
         <input name="correo" type="mail" required placeholder="Ingrese su correo electrónico*">
         <input name="telefono" type="number" required placeholder="Ingrese su telefono*">
@@ -198,12 +199,12 @@
     <footer>
         <div class="container espaciado">
             <div class="row">
-                <div>
+                <div class="col-md-3">
                 <img src="img/logos-aliveprobajo.png" alt="" width="100%">
                 </div>
-                <div>
+                <div class="col-md-3">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo autem a accusamus, perferendis odit eveniet, error incidunt quidem architecto consequuntur deserunt repellendus sequi provident temporibus saepe nesciunt, velit iure officiis!</p></div>
-                <div>
+                <div class="col-md-3">
                 <h4>Contacto</h4>
                 <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
@@ -212,8 +213,8 @@
                     <li class="facebook"><i class="fa-brands fa-facebook-f"></i></li>
                     <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i></li>
                 </ul>
-                </div>
-                <div class="mapouter gmap_canvas">
+                </div >
+                <div class="mapouter gmap_canvas col-md-3">
                     <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:100%;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:100%;}</style>
                 </div>
             </div>
