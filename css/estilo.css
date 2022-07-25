@@ -544,7 +544,6 @@ footer hr {
         align-items: center;
         justify-content: center;
     } <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
-  
     section .title a {
         display: none;
     }
@@ -599,7 +598,7 @@ footer hr {
     }  <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
 
     header .logo {
-        width: 85%;
+        width: 300px;
         background-size: contain;
     }
     .cabecera1 h2{
@@ -610,7 +609,7 @@ footer hr {
 
     .cabecera1 {
         height: 150px;
-    }        
+    }     
 
     /* ESTILO RESPONSIVE SLIDER HOME */
     .slider h2 {
@@ -706,7 +705,23 @@ footer hr {
     footer .row div {
     width: 100%;
     }
-
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        color: white;
+        background: 50%/100% 100% no-repeat;
+        padding-right: 40px;
+    }
 }
 
 /*TABLET*/
