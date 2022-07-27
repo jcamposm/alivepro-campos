@@ -60,18 +60,15 @@ header .cabecera {
 }
 header .preheader {
     padding-top: 8px;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
     background-color: #4d4d4d;
-    height: 25px;
 }
 header .preheader h3 {
     font-weight: lighter;
     font-size: 16px;
     line-height: 26px;
-    float: left;
 }
 header .social {
-    float: right;
     align-content: center;
 }
 header .logo {
@@ -101,6 +98,9 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 /* ESTILO ICONOS REDES SOCIALES */
+header .preheader ul {
+    margin-bottom: 0px;
+}
 .social li {
     display: inline-block;
     padding-left: 10px;
@@ -109,7 +109,6 @@ header nav ul li a:hover {
 }
 .social li i{
     background-color: #333333;
-/*    width: 10px; <-- ESTILO ELIMINADO POR BOOPSTRAP --> */
     border-radius: 50%;
     padding: 8px;
     text-align: center;
@@ -391,11 +390,10 @@ footer hr {
 /*CELULAR PEQUEÑO*/
 @media only screen and (max-width: 450px) {
     /* ESTILO RESPONSIVE HEADER */
-    header .preheader {
-        height: 45px !important;
-        text-align: center;
+    .preheader, .preheader .text-right {
+        text-align: center !important;
     }
-    header .preheader h3 {
+    .preheader h3 {
         font-size: 12px;
         line-height: 12px;
     }
@@ -424,16 +422,14 @@ footer hr {
     }
 
     /* ESTILO RESPONSIVE HEADER */
-    header .preheader {
-        height: 60px;
-        text-align: center;
+    .preheader, .preheader .text-right {
+        text-align: center !important;
     }
     header .preheader h3 {
-        float: none;
+        font-size: 12px;
         line-height: 12px;
     }
     header .social {
-        float: none;
         margin: 10px;
     }
     header .logo {
@@ -545,13 +541,11 @@ footer hr {
         }
     /* ESTILO RESPONSIVE HEADER */
     header .preheader {
-        height: 40px;
         text-align: center;
     }
     header .preheader h3 {
-        font-weight: lighter;
         font-size: 14px;
-        float: left;
+        line-height: 14px;
     }
     header nav i {
         color: #FFF;
