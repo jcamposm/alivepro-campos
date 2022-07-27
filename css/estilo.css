@@ -265,6 +265,7 @@ section#soluciones {
 #soluciones h3 {
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
 }
 #soluciones article img {
     display: block;
@@ -294,11 +295,80 @@ section#casos-exitos {
     background-color: #ffc000;
     color: #000;
 }
-.number {
+.number1, .number2, .number3, .number4 {
     padding-top: 10%;
     font-size: 60px;
 }
-
+.number1 {
+    animation: counter 8s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+}
+.number2 {
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num2 var(--num2);
+    font: 800 40px system-ui;
+}
+.number3 {
+    animation: counter 8s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num3 var(--num3);
+    font: 800 40px system-ui;
+}
+.number4 {
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num4 var(--num4);
+    font: 800 40px system-ui;
+}
+.number1::after {
+    content: counter(num);
+}
+.number2::after {
+    content: counter(num2);
+}
+.number3::after {
+    content: counter(num3);
+}
+.number4::after {
+    content: counter(num4);
+}
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+@property --num2 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+@property --num3 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+@property --num4 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+@keyframes counter {
+    from {
+    --num: 0;
+    --num2: 0;
+    --num3: 0;
+    --num4: 0;
+    }
+    to {
+    --num: 50;
+    --num2: 240;
+    --num3: 10;
+    --num4: 120;
+    }
+}
 /* ESTILO FORMULARIO DE CONTACTO */
 section#contacto {
     grid-area: contacto;
@@ -420,7 +490,10 @@ footer hr {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-
+    /* ESTILO RESPONSIVE COL */
+    .col-sm-6 {
+        width: 48%;
+        }
     /* ESTILO RESPONSIVE HEADER */
     .preheader, .preheader .text-right {
         text-align: center !important;
@@ -475,6 +548,18 @@ footer hr {
     #clientes {
         padding-top: 1rem;
         padding-bottom: 1rem;
+    }
+    /* ESTILO RESPONSIVE CASOS DE EXITO */
+    #casos-exitos .col-md-3 {
+        width: 48%;
+        }
+    .number {
+        padding-top: 10%;
+        font-size: 40px;
+    }
+    #casos-exitos p {
+        padding: 0px;
+        margin-bottom: 0px;
     }
     /* ESTILO FORMULARIO DE CONTACTO */
     #contacto input {
@@ -535,8 +620,8 @@ footer hr {
         padding-bottom: 2rem;
     }
     
-    /* ESTILO RESPONSIVE FOOTER */
-    .row .col-md-3, .col-md-3 {
+    /* ESTILO RESPONSIVE COL */
+    .row .col-md-3, .col-md-3, .col-sm-6 {
         width: 48%;
         }
     /* ESTILO RESPONSIVE HEADER */
