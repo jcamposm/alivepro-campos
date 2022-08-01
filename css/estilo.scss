@@ -1,0 +1,488 @@
+/* ESTILO ETIQUETAS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nosotros"
+    "soluciones"
+    "casosexitos"
+    "contacto"
+    "footer"
+    ;
+    grid-template-columns: 100%;
+}
+#grilla-paginas {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "cabecera"
+    "contenido"
+    "footer"
+    ;
+    grid-template-columns: 100%;
+}
+.espaciado {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+h1 {
+    display: none;
+}
+.text-center p{
+    text-align: center;
+    padding: 8px;
+}
+.clear {
+    clear: both;
+}
+
+/* ESTILO HEADER */
+header {
+    grid-area: header;
+
+    & .cabecera {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    }
+    & .preheader {
+    padding-top: 8px;
+    padding-bottom: 2px;
+    background-color: #4d4d4d;
+    
+        & h3 {
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 26px;
+        }
+    }
+    & .social {
+    align-content: center;
+    }
+    & .logo {
+    background-image: url(../img/logos-aliveprobajo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 355px;
+    height: 80px;
+    text-indent: -5000px;
+    display: block;
+    }
+    & nav {
+    float: left;
+    width: 100%;
+
+        & ul li {
+        padding-left: 20px;
+        }
+        & ul li a {
+        color: #FFF;
+        text-decoration: none;
+        text-shadow: 1px 1px #000;
+        }
+        & ul li a:hover {
+        color: #ffce00;
+        cursor: pointer;
+        }}
+/* ESTILO ICONOS REDES SOCIALES */
+    & .preheader ul {
+    margin-bottom: 0px;
+    }
+    }
+.social li {
+    display: inline-block;
+    padding-left: 10px;
+    color: #FFF;
+    font-size: 10px;
+
+    & li i{
+    background-color: #333333;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;}
+}
+/* ESTILO SLIDER HOME */
+.slider {
+    background: #4d4d4d;
+    background-image: url(../img/slider-alivepro1.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 600px;
+    align-content: center;
+
+    & h2{
+    padding-top: 10%;
+    font-size: 60px;
+    width: 60%;
+    }
+    & p{
+    font-weight: light;
+    width: 60%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    & button{
+    background-color: #ffc000;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 16px;
+    }
+    & button:hover{
+    background-color: #FFF;
+    color: #333;
+    cursor: pointer;
+    }
+}
+/* ESTILO CABECERA */
+.cabecera1 {
+    grid-area: cabecera;
+    background: #4d4d4d;
+    background-image: url(../img/slider-alivepro2.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 250px;
+    align-content: center;
+
+    & h2{
+    font-size: 60px;
+    display: block;
+    padding: 40px;
+    }
+}
+.video {
+    border: solid 5px #b2b2b2;
+
+    & iframe {
+    height: 500px;
+    }
+    & iframe {
+    height: 300px;
+}
+}
+/* ESTILO TITULOS */
+section{
+    & .title {
+    display: inline-block;
+    width: 100%;
+    text-align: end;
+    margin: 30px 0px;
+    height: 34px;
+    
+        & h2{
+        font-weight: 100;
+        float: left;
+        display: block;
+        margin-right: 30px;
+        font-size: 30px;
+        }
+        & a{
+        color:#ffc000;
+        text-decoration: none;
+        }
+        & hr{
+        margin-top: 5px;
+        border-bottom: solid 2px #ffc000 !important;
+        border: 0px;
+        overflow: hidden;
+}
+}
+
+}
+#subtitle {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* ESTILO NOSOTROS */
+#nosotros {
+    & article {
+    justify-content: center;
+    text-align: center;
+}
+    & h3 {
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+    & article img {
+    width: 90%;
+    border: solid 2px #ffce00;
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+}
+#equipo {
+    background: #3a3a3a; 
+
+    & article {
+    background: #3a3a3a;
+    color: #a4a4a4;   
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0px;
+
+        & img {
+        width: 90%;
+        border: solid 2px #ffce00;
+        border-radius: 50%;
+        padding: 15px;
+        margin: auto;
+        }}
+
+    & h3 {
+    margin-top: 20px;
+    display: block;
+}  
+    & hr{
+    border-bottom: solid 2px #ffc000 !important;
+    border: 0px;
+}
+}
+#clientes {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    & .row div {
+    width: 24%;
+    }
+
+    & img {
+    width: 100%;
+    }
+}
+/* ESTILO SOLUCIONES */
+section#soluciones {
+    grid-area: soluciones;
+}
+/*#soluciones {
+    background-color: #3a3a3a;
+}*/
+#soluciones {
+    & h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    }
+    & article {
+    & img {
+    display: block;
+    width: 100%;
+    border: solid 2px #ffce00;
+    margin-bottom: 20px;
+}
+    & p {
+    padding-top: 20px;
+    text-align: justify;
+}
+}
+}
+#soporte .row div{
+    width: 45%;
+    text-align: justify;
+}
+
+#soporte .row div{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* ESTILO CASO DE ÉXITO */
+section#casos-exitos {
+    grid-area: casosexitos;
+}
+#casos-exitos {
+    background-color: #ffc000;
+    color: #000;
+}
+.number1, .number2, .number3, .number4 {
+    padding-top: 10%;
+    font-size: 60px;
+}
+.number1 {
+    animation: counter 8s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+}
+.number2 {
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num2 var(--num2);
+    font: 800 40px system-ui;
+}
+.number3 {
+    animation: counter 8s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num3 var(--num3);
+    font: 800 40px system-ui;
+}
+.number4 {
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num4 var(--num4);
+    font: 800 40px system-ui;
+}
+.number1::after {
+    content: counter(num);
+}
+.number2::after {
+    content: counter(num2);
+}
+.number3::after {
+    content: counter(num3);
+}
+.number4::after {
+    content: counter(num4);
+}
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+@property --num2 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+@property --num3 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+@property --num4 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+@keyframes counter {
+    from {
+    --num: 0;
+    --num2: 0;
+    --num3: 0;
+    --num4: 0;
+    }
+    to {
+    --num: 50;
+    --num2: 240;
+    --num3: 10;
+    --num4: 120;
+    }
+}
+/* ESTILO FORMULARIO DE CONTACTO */
+section#contacto {
+    grid-area: contacto;
+}
+#contacto {
+    & h2{
+    font-weight: 100;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+}
+    & form{
+    margin-top: 30px;
+}
+    & input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 30%;
+    background-color: #b2b2b2;
+    color: #000;
+    border: solid 2px #ffce00;
+    padding: 8px;
+}
+    & textarea {
+    background-color: #b2b2b2;
+    color: #000;
+    width: 100%;
+    margin: 20px 0px;
+    border: solid 2px #ffce00;
+}
+    & textarea::placeholder {
+    padding: 8px;
+}
+    & ::placeholder {
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+}
+.button2 {
+    display: block !important;
+    width: auto !important;
+    float: none !important;
+    background-color: #666666 !important;
+    color: #FFF !important;
+    padding: 8px 20px !important;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border: 0px;
+    border: solid 2px #666666 !important;
+}
+.button2:hover {
+    background-color: #FFF !important;
+    color: #333 !important;
+}
+
+
+/* ESTILO FOOTER */
+footer {
+    grid-area: footer;
+    background-color: #3a3a3a;
+
+    & hr {
+    border-bottom: solid 1px #FFF;
+}
+}
+.copyright {
+    background-color: #1c1c1c;
+    height: 30px;
+    padding: 4px 0px;
+
+    & .container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+}
+
+/* ESTILO GALERIA */
+
+.galeria-imagenes {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#galeria {
+    & .galeria-imagenes div {
+    width: 1fr;
+    background-size: cover;
+}
+    & img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+}
+
+@import "_media"

@@ -1,0 +1,284 @@
+/*CELULAR PEQUEÑO*/
+@media only screen and (max-width: 450px) {
+    /* ESTILO RESPONSIVE HEADER */
+    .preheader, .preheader .text-right {
+        text-align: center !important;
+    }
+    .preheader h3 {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+/*CELULAR*/
+@media only screen and (max-width: 600px) {
+    section {
+    & .title {
+    & .title a {
+        display: none;
+    }
+    & .title h2 {
+        display: block;
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+    & .title hr {
+        display: block;
+        float: none;
+    }
+    }
+}
+    .espaciado {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    /* ESTILO RESPONSIVE COL */
+    .col-sm-6 {
+        width: 48%;
+        }
+    /* ESTILO RESPONSIVE HEADER */
+    .preheader, .preheader .text-right {
+        text-align: center !important;
+    }
+    header .preheader h3 {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    header .social {
+        margin: 10px;
+    }
+    header .logo {
+        width: 200px;
+        background-size: contain;
+    }
+    .cabecera1 h2{
+        font-size: 40px;
+        display: block;
+        padding-top: 70px;
+    }          
+
+    .cabecera1 {
+        height: 150px;
+    }     
+
+    /* ESTILO RESPONSIVE SLIDER HOME */
+    .slider h2 {
+    padding-top: 10%;
+    font-size: 38px;
+    width: 100%;
+    }
+    .slider p {
+    width: 100%;
+    }
+    #nosotros h3 {
+        font-weight: 100;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .video iframe {
+        height: 150px;
+    }
+    /* ESTILO RESPONSIVE SOLUCIONES */
+    #soluciones article {
+        width: 100%;
+    }
+    #soporte .row div{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }    
+    #clientes {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    /* ESTILO RESPONSIVE CASOS DE EXITO */
+    #casos-exitos .col-md-3 {
+        width: 48%;
+        }
+    .number {
+        padding-top: 10%;
+        font-size: 40px;
+    }
+    #casos-exitos p {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    /* ESTILO FORMULARIO DE CONTACTO */
+    #contacto input {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* ESTILO RESPONSIVE GALERIA */
+    .galeria-imagenes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 5px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 50px;
+    }
+    #galeria .galeria-imagenes div {
+        width: 1fr;
+        background-size: cover;
+    }
+    
+    #galeria img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* ESTILO RESPONSIVE FOOTER */
+    footer .row div {
+    width: 100%;
+    }
+    .copyright p {
+        text-align: center !important;
+        margin-bottom: 0px;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        color: white;
+        background: 50%/100% 100% no-repeat;
+        padding-right: 40px;
+    }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+    .espaciado {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    /* ESTILO RESPONSIVE COL */
+    .row .col-md-3, .col-md-3, .col-sm-6 {
+        width: 48%;
+        }
+    /* ESTILO RESPONSIVE HEADER */
+    header .preheader {
+        text-align: center;
+    }
+    header .preheader h3 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    header nav i {
+        color: #FFF;
+    }
+    /* ESTILO RESPONSIVE SLIDER HOME */
+    .slider h2 {
+        padding-top: 20%;
+        font-size: 48px;
+        width: 100%;
+    }
+    .slider p {
+        width: 80%;
+    }
+    /* ESTILO RESPONSIVE NOSOTROS */
+    #nosotros h3 {
+        font-weight: 100;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    /* ESTILO RESPONSIVE SOLUCIONES */
+    .number {
+        padding-top: 10%;
+        font-size: 40px;
+    }
+    /* ESTILO RESPONSIVE FORMULARIO DE CONTACTO */
+    #contacto input {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* ESTILO RESPONSIVE GALERIA */
+    .galeria-imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        justify-content: center;
+        align-content:flex-start;
+        margin-bottom: 50px;
+    }
+    #galeria .galeria-imagenes div {
+        width: 1fr;
+        background-size: cover;
+    }
+    
+    #galeria img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .copyright p {
+        text-align: center !important;
+        margin-bottom: 0px;
+    }
+    #clientes {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+}
+
+/*ESCRITORIO*/
+@media only screen and (min-width: 1024px) {
+    /* ESTILO RESPONSIVE GALERIA */
+    .galeria-imagenes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 10px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 100px;
+    }
+    #galeria .galeria-imagenes div {
+        width: 1fr;
+        background-size: cover;
+    }
+    
+    #galeria img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+/*ESCRITORIO FULL HD*/
+@media only screen and (min-width: 1920px) {
+
+
+
+}
+/* TOGGLER BOOTSTRAP*/
+@media only screen and (max-width: 990px) {
+    header nav {
+        float: none !important;
+        width: 100%;
+    }
+    .nav-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-content: center;
+        border-bottom: solid 0.5px #fff;
+    }
+    
+    .navbar-collapse {
+        padding-bottom: 30px;
+    }
+}
