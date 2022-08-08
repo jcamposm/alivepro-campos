@@ -345,16 +345,18 @@ section#casos-exitos {
   content: counter(num);
 }
 
-/*
 .number2::after {
-    content: counter(num2);
+  content: counter(num2);
 }
+
 .number3::after {
-    content: counter(num3);
+  content: counter(num3);
 }
+
 .number4::after {
-    content: counter(num4);
-}*/
+  content: counter(num4);
+}
+
 @property --num {
   syntax: "<integer>";
   initial-value: 0;
@@ -415,20 +417,22 @@ section#casos-exitos {
     counter-reset: num4 var(--num4);
     font: 800 40px system-ui;
 }*/
+.number1::after {
+  content: counter(num);
+}
+
 .number2::after {
   content: counter(num2);
 }
 
-/*
-.number2::after {
-    content: counter(num2);
-}
 .number3::after {
-    content: counter(num3);
+  content: counter(num3);
 }
+
 .number4::after {
-    content: counter(num4);
-}*/
+  content: counter(num4);
+}
+
 @property --num {
   syntax: "<integer>";
   initial-value: 0;
@@ -489,20 +493,22 @@ section#casos-exitos {
     counter-reset: num4 var(--num4);
     font: 800 40px system-ui;
 }*/
+.number1::after {
+  content: counter(num);
+}
+
+.number2::after {
+  content: counter(num2);
+}
+
 .number3::after {
   content: counter(num3);
 }
 
-/*
-.number2::after {
-    content: counter(num2);
-}
-.number3::after {
-    content: counter(num3);
-}
 .number4::after {
-    content: counter(num4);
-}*/
+  content: counter(num4);
+}
+
 @property --num {
   syntax: "<integer>";
   initial-value: 0;
@@ -563,20 +569,22 @@ section#casos-exitos {
     counter-reset: num4 var(--num4);
     font: 800 40px system-ui;
 }*/
+.number1::after {
+  content: counter(num);
+}
+
+.number2::after {
+  content: counter(num2);
+}
+
+.number3::after {
+  content: counter(num3);
+}
+
 .number4::after {
   content: counter(num4);
 }
 
-/*
-.number2::after {
-    content: counter(num2);
-}
-.number3::after {
-    content: counter(num3);
-}
-.number4::after {
-    content: counter(num4);
-}*/
 @property --num {
   syntax: "<integer>";
   initial-value: 0;

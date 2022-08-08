@@ -359,19 +359,19 @@ number4: num4,
     counter-reset: num4 var(--num4);
     font: 800 40px system-ui;
 }*/
-.#{$number1}::after {
-    content: counter(#{$num});
+.number1::after {
+    content: counter(map-get($numeros1, number1));
 }
-/*
+
 .number2::after {
-    content: counter(num2);
+    content: counter(map-get($numeros1, number2));
 }
 .number3::after {
-    content: counter(num3);
+    content: counter(map-get($numeros1, number3));
 }
 .number4::after {
-    content: counter(num4);
-}*/
+    content: counter(map-get($numeros1, number4));
+}
 @property --num {
     syntax: "<integer>";
     initial-value: 0;
