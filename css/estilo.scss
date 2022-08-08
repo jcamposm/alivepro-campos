@@ -4,6 +4,13 @@
     margin: 0;
     padding: 0;
 }
+/* ACÁ VA EL MIXIN*/
+@mixin size($width, $border, $padding) {
+    width: $width;
+    border: $border;
+    padding: $padding;
+    }
+
 body {
     background-color: #1c1c1c;
     color: #fff;
@@ -225,10 +232,11 @@ section{
     margin-bottom: 30px;
 }
     & article img {
-    width: 90%;
-    border: solid 2px #ffce00;
+    @include size(90%, solid 2px #ffce00, 8px);
+    /*width: 90%;
+    border: solid 2px #ffce00;*/
     border-radius: 50%;
-    padding: 8px;
+    /*padding: 8px;*/
     margin-bottom: 20px;
 }
 }
@@ -243,10 +251,8 @@ section{
     padding: 30px 0px;
 
         & img {
-        width: 90%;
-        border: solid 2px #ffce00;
+        @include size(90%, solid 2px #ffce00, 15px);
         border-radius: 50%;
-        padding: 15px;
         margin: auto;
         }}
 
@@ -286,9 +292,8 @@ section#soluciones {
     }
     & article {
     & img {
+    @include size(100%, solid 2px #ffce00, auto);
     display: block;
-    width: 100%;
-    border: solid 2px #ffce00;
     margin-bottom: 20px;
 }
     & p {
@@ -315,29 +320,33 @@ section#casos-exitos {
     background-color: #ffc000;
     color: #000;
 }
-.number1, .number2, .number3, .number4 {
+.number {
     padding-top: 10%;
     font-size: 60px;
 }
 .number1 {
+    @extend .number;
     animation: counter 8s ease-in-out;
     animation-fill-mode: forwards;
     counter-reset: num var(--num);
     font: 800 40px system-ui;
 }
 .number2 {
+    @extend .number;
     animation: counter 10s ease-in-out;
     animation-fill-mode: forwards;
     counter-reset: num2 var(--num2);
     font: 800 40px system-ui;
 }
 .number3 {
+    @extend .number;
     animation: counter 8s ease-in-out;
     animation-fill-mode: forwards;
     counter-reset: num3 var(--num3);
     font: 800 40px system-ui;
 }
 .number4 {
+    @extend .number;
     animation: counter 10s ease-in-out;
     animation-fill-mode: forwards;
     counter-reset: num4 var(--num4);
@@ -404,21 +413,18 @@ section#contacto {
     margin-top: 30px;
 }
     & input {
+    @include size (30%, solid 2px #ffce00, 8px);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 30%;
     background-color: #b2b2b2;
     color: #000;
-    border: solid 2px #ffce00;
-    padding: 8px;
 }
     & textarea {
+    @include size (100%, solid 2px #ffce00, auto);
     background-color: #b2b2b2;
     color: #000;
-    width: 100%;
     margin: 20px 0px;
-    border: solid 2px #ffce00;
 }
     & textarea::placeholder {
     padding: 8px;
@@ -429,17 +435,15 @@ section#contacto {
 }
 }
 .button2 {
+    @include size (auto !important, solid 2px #666666 !important, 8px 20px !important);
     display: block !important;
-    width: auto !important;
     float: none !important;
     background-color: #666666 !important;
     color: #FFF !important;
-    padding: 8px 20px !important;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     border: 0px;
-    border: solid 2px #666666 !important;
 }
 .button2:hover {
     background-color: #FFF !important;
