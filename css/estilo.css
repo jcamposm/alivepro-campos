@@ -220,10 +220,7 @@ section .title hr {
   width: 90%;
   border: solid 2px #ffce00;
   padding: 8px;
-  /*width: 90%;
-  border: solid 2px #ffce00;*/
   border-radius: 50%;
-  /*padding: 8px;*/
   margin-bottom: 20px;
 }
 
@@ -314,6 +311,7 @@ section#casos-exitos {
   font-size: 60px;
 }
 
+/* ACÁ VA EL MAP*/
 .number1 {
   animation: counter 8s ease-in-out;
   animation-fill-mode: forwards;
@@ -321,43 +319,42 @@ section#casos-exitos {
   font: 800 40px system-ui;
 }
 
+/*
 .number2 {
-  animation: counter 10s ease-in-out;
-  animation-fill-mode: forwards;
-  counter-reset: num2 var(--num2);
-  font: 800 40px system-ui;
+    @extend .number;
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num2 var(--num2);
+    font: 800 40px system-ui;
 }
-
 .number3 {
-  animation: counter 8s ease-in-out;
-  animation-fill-mode: forwards;
-  counter-reset: num3 var(--num3);
-  font: 800 40px system-ui;
+    @extend .number;
+    animation: counter 8s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num3 var(--num3);
+    font: 800 40px system-ui;
 }
-
 .number4 {
-  animation: counter 10s ease-in-out;
-  animation-fill-mode: forwards;
-  counter-reset: num4 var(--num4);
-  font: 800 40px system-ui;
-}
-
+    @extend .number;
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num4 var(--num4);
+    font: 800 40px system-ui;
+}*/
 .number1::after {
   content: counter(num);
 }
 
+/*
 .number2::after {
-  content: counter(num2);
+    content: counter(num2);
 }
-
 .number3::after {
-  content: counter(num3);
+    content: counter(num3);
 }
-
 .number4::after {
-  content: counter(num4);
-}
-
+    content: counter(num4);
+}*/
 @property --num {
   syntax: "<integer>";
   initial-value: 0;
@@ -381,8 +378,227 @@ section#casos-exitos {
 @keyframes counter {
   from {
     --num: 0;
+  }
+  to {
+    --num: 50;
+    --num2: 240;
+    --num3: 10;
+    --num4: 120;
+  }
+}
+.number2 {
+  animation: counter 8s ease-in-out;
+  animation-fill-mode: forwards;
+  counter-reset: num2 var(--num2);
+  font: 800 40px system-ui;
+}
+
+/*
+.number2 {
+    @extend .number;
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num2 var(--num2);
+    font: 800 40px system-ui;
+}
+.number3 {
+    @extend .number;
+    animation: counter 8s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num3 var(--num3);
+    font: 800 40px system-ui;
+}
+.number4 {
+    @extend .number;
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num4 var(--num4);
+    font: 800 40px system-ui;
+}*/
+.number2::after {
+  content: counter(num2);
+}
+
+/*
+.number2::after {
+    content: counter(num2);
+}
+.number3::after {
+    content: counter(num3);
+}
+.number4::after {
+    content: counter(num4);
+}*/
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num3 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num4 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@keyframes counter {
+  from {
     --num2: 0;
+  }
+  to {
+    --num: 50;
+    --num2: 240;
+    --num3: 10;
+    --num4: 120;
+  }
+}
+.number3 {
+  animation: counter 8s ease-in-out;
+  animation-fill-mode: forwards;
+  counter-reset: num3 var(--num3);
+  font: 800 40px system-ui;
+}
+
+/*
+.number2 {
+    @extend .number;
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num2 var(--num2);
+    font: 800 40px system-ui;
+}
+.number3 {
+    @extend .number;
+    animation: counter 8s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num3 var(--num3);
+    font: 800 40px system-ui;
+}
+.number4 {
+    @extend .number;
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num4 var(--num4);
+    font: 800 40px system-ui;
+}*/
+.number3::after {
+  content: counter(num3);
+}
+
+/*
+.number2::after {
+    content: counter(num2);
+}
+.number3::after {
+    content: counter(num3);
+}
+.number4::after {
+    content: counter(num4);
+}*/
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num3 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num4 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@keyframes counter {
+  from {
     --num3: 0;
+  }
+  to {
+    --num: 50;
+    --num2: 240;
+    --num3: 10;
+    --num4: 120;
+  }
+}
+.number4 {
+  animation: counter 8s ease-in-out;
+  animation-fill-mode: forwards;
+  counter-reset: num4 var(--num4);
+  font: 800 40px system-ui;
+}
+
+/*
+.number2 {
+    @extend .number;
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num2 var(--num2);
+    font: 800 40px system-ui;
+}
+.number3 {
+    @extend .number;
+    animation: counter 8s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num3 var(--num3);
+    font: 800 40px system-ui;
+}
+.number4 {
+    @extend .number;
+    animation: counter 10s ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num4 var(--num4);
+    font: 800 40px system-ui;
+}*/
+.number4::after {
+  content: counter(num4);
+}
+
+/*
+.number2::after {
+    content: counter(num2);
+}
+.number3::after {
+    content: counter(num3);
+}
+.number4::after {
+    content: counter(num4);
+}*/
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num3 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --num4 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@keyframes counter {
+  from {
     --num4: 0;
   }
   to {

@@ -233,10 +233,7 @@ section{
 }
     & article img {
     @include size(90%, solid 2px #ffce00, 8px);
-    /*width: 90%;
-    border: solid 2px #ffce00;*/
     border-radius: 50%;
-    /*padding: 8px;*/
     margin-bottom: 20px;
 }
 }
@@ -324,13 +321,23 @@ section#casos-exitos {
     padding-top: 10%;
     font-size: 60px;
 }
-.number1 {
+/* ACÁ VA EL MAP*/
+$numeros1: (
+number1: num,
+number2: num2,
+number3: num3,
+number4: num4,
+);
+
+@each $number1, $num in $numeros1{
+.#{$number1} {
     @extend .number;
     animation: counter 8s ease-in-out;
     animation-fill-mode: forwards;
-    counter-reset: num var(--num);
+    counter-reset: #{$num} var(--#{$num});
     font: 800 40px system-ui;
 }
+/*
 .number2 {
     @extend .number;
     animation: counter 10s ease-in-out;
@@ -351,10 +358,11 @@ section#casos-exitos {
     animation-fill-mode: forwards;
     counter-reset: num4 var(--num4);
     font: 800 40px system-ui;
+}*/
+.#{$number1}::after {
+    content: counter(#{$num});
 }
-.number1::after {
-    content: counter(num);
-}
+/*
 .number2::after {
     content: counter(num2);
 }
@@ -363,7 +371,7 @@ section#casos-exitos {
 }
 .number4::after {
     content: counter(num4);
-}
+}*/
 @property --num {
     syntax: "<integer>";
     initial-value: 0;
@@ -384,12 +392,10 @@ section#casos-exitos {
     initial-value: 0;
     inherits: false;
 }
+
 @keyframes counter {
     from {
-    --num: 0;
-    --num2: 0;
-    --num3: 0;
-    --num4: 0;
+    --#{$num}: 0;
     }
     to {
     --num: 50;
@@ -397,7 +403,7 @@ section#casos-exitos {
     --num3: 10;
     --num4: 120;
     }
-}
+}}
 /* ESTILO FORMULARIO DE CONTACTO */
 section#contacto {
     grid-area: contacto;
