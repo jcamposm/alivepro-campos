@@ -1,0 +1,25 @@
+{
+  "name": "alivepro-campos",
+  "version": "1.0.0",
+  "description": "Sitio web de producción técnica y logística de eventos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss css/estilo.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcamposm/alivepro-campos.git"
+  },
+  "author": "Jean Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcamposm/alivepro-campos/issues"
+  },
+  "homepage": "https://github.com/jcamposm/alivepro-campos#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

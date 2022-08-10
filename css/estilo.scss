@@ -1,9 +1,15 @@
 /* ESTILO ETIQUETAS GENERALES */
-
 * {
     margin: 0;
     padding: 0;
 }
+/* VARIABLES */
+$amarillo: #ffce00;
+$gris: #333;
+$gris-claro: #4d4d4d;
+$cfondo: #1c1c1c;
+$parrafo: 16px;
+
 /* ACÁ VA EL MIXIN*/
 @mixin size($width, $border, $padding) {
     width: $width;
@@ -12,7 +18,7 @@
     }
 
 body {
-    background-color: #1c1c1c;
+    background-color: $cfondo;
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
@@ -60,6 +66,10 @@ h1 {
     clear: both;
 }
 
+.fa-brands {
+font-size: 15px;
+}
+
 /* ESTILO HEADER */
 header {
     grid-area: header;
@@ -71,11 +81,11 @@ header {
     & .preheader {
     padding-top: 8px;
     padding-bottom: 2px;
-    background-color: #4d4d4d;
+    background-color: $gris-claro;
     
         & h3 {
         font-weight: lighter;
-        font-size: 16px;
+        font-size: $parrafo;
         line-height: 26px;
         }
     }
@@ -105,7 +115,7 @@ header {
         text-shadow: 1px 1px #000;
         }
         & ul li a:hover {
-        color: #ffce00;
+        color: $amarillo;
         cursor: pointer;
         }}
 /* ESTILO ICONOS REDES SOCIALES */
@@ -120,14 +130,14 @@ header {
     font-size: 10px;
 
     & li i{
-    background-color: #333333;
+    background-color: $gris;
     border-radius: 50%;
     padding: 8px;
     text-align: center;}
 }
 /* ESTILO SLIDER HOME */
 .slider {
-    background: #4d4d4d;
+    background: $gris-claro;
     background-image: url(../img/slider-alivepro1.png);
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -138,7 +148,7 @@ header {
     & h2{
     padding-top: 10%;
     font-size: 60px;
-    width: 60%;
+    width: 80%;
     }
     & p{
     font-weight: light;
@@ -151,18 +161,18 @@ header {
     padding: 10px 30px;
     border-radius: 8px;
     border: 0px;
-    font-size: 16px;
+    font-size: $parrafo;
     }
     & button:hover{
     background-color: #FFF;
-    color: #333;
+    color: $gris;
     cursor: pointer;
     }
 }
 /* ESTILO CABECERA */
 .cabecera1 {
     grid-area: cabecera;
-    background: #4d4d4d;
+    background: $gris-claro;
     background-image: url(../img/slider-alivepro2.png);
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -232,7 +242,7 @@ section{
     margin-bottom: 30px;
 }
     & article img {
-    @include size(90%, solid 2px #ffce00, 8px);
+    @include size(90%, solid 2px $amarillo, 8px);
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -248,7 +258,7 @@ section{
     padding: 30px 0px;
 
         & img {
-        @include size(90%, solid 2px #ffce00, 15px);
+        @include size(90%, solid 2px $amarillo, 15px);
         border-radius: 50%;
         margin: auto;
         }}
@@ -283,13 +293,13 @@ section#soluciones {
 }*/
 #soluciones {
     & h3 {
-    font-size: 16px;
+    font-size: $parrafo;
     font-weight: bold;
     text-align: center;
     }
     & article {
     & img {
-    @include size(100%, solid 2px #ffce00, auto);
+    @include size(100%, solid 2px $amarillo, auto);
     display: block;
     margin-bottom: 20px;
 }
@@ -335,30 +345,8 @@ number4: num4,
     animation: counter 8s ease-in-out;
     animation-fill-mode: forwards;
     counter-reset: #{$num} var(--#{$num});
-    font: 800 40px system-ui;
+    font: 600 50px system-ui;
 }
-/*
-.number2 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num2 var(--num2);
-    font: 800 40px system-ui;
-}
-.number3 {
-    @extend .number;
-    animation: counter 8s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num3 var(--num3);
-    font: 800 40px system-ui;
-}
-.number4 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num4 var(--num4);
-    font: 800 40px system-ui;
-}*/
 .number1::after {
     content: counter(map-get($numeros1, number1));
 }
@@ -419,7 +407,7 @@ section#contacto {
     margin-top: 30px;
 }
     & input {
-    @include size (30%, solid 2px #ffce00, 8px);
+    @include size (30%, solid 2px $amarillo, 8px);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -427,7 +415,7 @@ section#contacto {
     color: #000;
 }
     & textarea {
-    @include size (100%, solid 2px #ffce00, auto);
+    @include size (100%, solid 2px $amarillo, auto);
     background-color: #b2b2b2;
     color: #000;
     margin: 20px 0px;
@@ -453,7 +441,7 @@ section#contacto {
 }
 .button2:hover {
     background-color: #FFF !important;
-    color: #333 !important;
+    color: $gris !important;
 }
 
 
@@ -467,7 +455,7 @@ footer {
 }
 }
 .copyright {
-    background-color: #1c1c1c;
+    background-color: $cfondo;
     height: 30px;
     padding: 4px 0px;
 

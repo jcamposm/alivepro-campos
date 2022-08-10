@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+/* VARIABLES */
 /* ACÁ VA EL MIXIN*/
 body {
   background-color: #1c1c1c;
@@ -47,6 +48,10 @@ h1 {
 
 .clear {
   clear: both;
+}
+
+.fa-brands {
+  font-size: 15px;
 }
 
 /* ESTILO HEADER */
@@ -108,7 +113,7 @@ header .preheader ul {
   font-size: 10px;
 }
 .social li li i {
-  background-color: #333333;
+  background-color: #333;
   border-radius: 50%;
   padding: 8px;
   text-align: center;
@@ -127,7 +132,7 @@ header .preheader ul {
 .slider h2 {
   padding-top: 10%;
   font-size: 60px;
-  width: 60%;
+  width: 80%;
 }
 .slider p {
   font-weight: light;
@@ -316,31 +321,9 @@ section#casos-exitos {
   animation: counter 8s ease-in-out;
   animation-fill-mode: forwards;
   counter-reset: num var(--num);
-  font: 800 40px system-ui;
+  font: 600 50px system-ui;
 }
 
-/*
-.number2 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num2 var(--num2);
-    font: 800 40px system-ui;
-}
-.number3 {
-    @extend .number;
-    animation: counter 8s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num3 var(--num3);
-    font: 800 40px system-ui;
-}
-.number4 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num4 var(--num4);
-    font: 800 40px system-ui;
-}*/
 .number1::after {
   content: counter(num);
 }
@@ -392,31 +375,9 @@ section#casos-exitos {
   animation: counter 8s ease-in-out;
   animation-fill-mode: forwards;
   counter-reset: num2 var(--num2);
-  font: 800 40px system-ui;
+  font: 600 50px system-ui;
 }
 
-/*
-.number2 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num2 var(--num2);
-    font: 800 40px system-ui;
-}
-.number3 {
-    @extend .number;
-    animation: counter 8s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num3 var(--num3);
-    font: 800 40px system-ui;
-}
-.number4 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num4 var(--num4);
-    font: 800 40px system-ui;
-}*/
 .number1::after {
   content: counter(num);
 }
@@ -468,31 +429,9 @@ section#casos-exitos {
   animation: counter 8s ease-in-out;
   animation-fill-mode: forwards;
   counter-reset: num3 var(--num3);
-  font: 800 40px system-ui;
+  font: 600 50px system-ui;
 }
 
-/*
-.number2 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num2 var(--num2);
-    font: 800 40px system-ui;
-}
-.number3 {
-    @extend .number;
-    animation: counter 8s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num3 var(--num3);
-    font: 800 40px system-ui;
-}
-.number4 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num4 var(--num4);
-    font: 800 40px system-ui;
-}*/
 .number1::after {
   content: counter(num);
 }
@@ -544,31 +483,9 @@ section#casos-exitos {
   animation: counter 8s ease-in-out;
   animation-fill-mode: forwards;
   counter-reset: num4 var(--num4);
-  font: 800 40px system-ui;
+  font: 600 50px system-ui;
 }
 
-/*
-.number2 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num2 var(--num2);
-    font: 800 40px system-ui;
-}
-.number3 {
-    @extend .number;
-    animation: counter 8s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num3 var(--num3);
-    font: 800 40px system-ui;
-}
-.number4 {
-    @extend .number;
-    animation: counter 10s ease-in-out;
-    animation-fill-mode: forwards;
-    counter-reset: num4 var(--num4);
-    font: 800 40px system-ui;
-}*/
 .number1::after {
   content: counter(num);
 }
