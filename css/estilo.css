@@ -227,6 +227,10 @@ section .title hr {
   padding: 8px;
   border-radius: 50%;
   margin-bottom: 20px;
+  transition: transform .2s;
+}
+#nosotros article img:hover {
+transform: scale(1.1);
 }
 
 #equipo {
@@ -285,6 +289,10 @@ section#soluciones {
   padding: auto;
   display: block;
   margin-bottom: 20px;
+  transition: transform .2s;
+}
+#soluciones article img:hover {
+  transform: scale(1.1); 
 }
 #soluciones article p {
   padding-top: 20px;
@@ -624,6 +632,7 @@ footer hr {
 }
 #galeria img {
   width: 100%;
+  border: solid 1px #ffce00;
   margin-bottom: 20px;
 }
 
@@ -753,6 +762,10 @@ footer hr {
   /* ESTILO RESPONSIVE FOOTER */
   footer .row div {
     width: 100%;
+  }
+  footer img{
+    width: 60%;
+    margin-bottom: 30px;
   }
   .copyright p {
     text-align: center !important;
