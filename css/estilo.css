@@ -179,11 +179,7 @@ header .preheader ul {
 
 .video {
   border: solid 5px #b2b2b2;
-}
-.video iframe {
-  height: 500px;
-}
-.video iframe {
+  width: 480px;
   height: 300px;
 }
 
@@ -680,6 +676,11 @@ footer a:hover {
     display: block;
     float: none;
   }
+  .video {
+    border: solid 5px #b2b2b2;
+    width: 360px;
+    height: 225px;
+  }
   .espaciado {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -808,6 +809,11 @@ footer a:hover {
   .espaciado {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  .video {
+    border: solid 5px #b2b2b2;
+    width: 400px;
+    height: 250px;
   }
   /* ESTILO RESPONSIVE COL */
   .row .col-md-3, .col-md-3, .col-sm-6 {

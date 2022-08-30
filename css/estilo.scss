@@ -198,13 +198,8 @@ header {
 }
 .video {
     border: solid 5px #b2b2b2;
-
-    & iframe {
-    height: 500px;
-    }
-    & iframe {
+    width: 480px;
     height: 300px;
-}
 }
 /* ESTILO TITULOS */
 section{
