@@ -73,6 +73,13 @@ header .preheader h3 {
   font-size: 16px;
   line-height: 26px;
 }
+header .preheader h3 a {
+  text-decoration: none;
+  color: white;
+}
+header .preheader h3 a:hover {
+  color: #ffce00;
+}
 header .social {
   align-content: center;
 }
@@ -227,10 +234,10 @@ section .title hr {
   padding: 8px;
   border-radius: 50%;
   margin-bottom: 20px;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
-#nosotros article img:hover {
-transform: scale(1.1);
+#nosotros img:hover {
+  transform: scale(1.1);
 }
 
 #equipo {
@@ -289,10 +296,10 @@ section#soluciones {
   padding: auto;
   display: block;
   margin-bottom: 20px;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 #soluciones article img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 #soluciones article p {
   padding-top: 20px;
@@ -608,6 +615,13 @@ footer {
 footer hr {
   border-bottom: solid 1px #FFF;
 }
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffce00;
+}
 
 .copyright {
   background-color: #1c1c1c;
@@ -634,6 +648,10 @@ footer hr {
   width: 100%;
   border: solid 1px #ffce00;
   margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+#galeria img:hover {
+  transform: scale(1.1);
 }
 
 /*CELULAR PEQUEÑO*/
@@ -762,10 +780,6 @@ footer hr {
   /* ESTILO RESPONSIVE FOOTER */
   footer .row div {
     width: 100%;
-  }
-  footer img{
-    width: 60%;
-    margin-bottom: 30px;
   }
   .copyright p {
     text-align: center !important;

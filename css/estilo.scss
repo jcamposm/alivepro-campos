@@ -87,7 +87,17 @@ header {
         font-weight: lighter;
         font-size: $parrafo;
         line-height: 26px;
+
+        & a{
+        text-decoration: none;
+        color: white
         }
+
+        & a:hover{
+        color: $amarillo;
+        }
+    }
+        
     }
     & .social {
     align-content: center;
@@ -245,8 +255,14 @@ section{
     @include size(90%, solid 2px $amarillo, 8px);
     border-radius: 50%;
     margin-bottom: 20px;
+    transition: transform .2s;
 }
+    & img:hover {
+    transform: scale(1.1);
 }
+
+}
+
 #equipo {
     background: #3a3a3a; 
 
@@ -302,6 +318,11 @@ section#soluciones {
     @include size(100%, solid 2px $amarillo, auto);
     display: block;
     margin-bottom: 20px;
+    transition: transform .2s;
+    }
+    & img:hover {
+    transform: scale(1.1);
+
 }
     & p {
     padding-top: 20px;
@@ -453,6 +474,13 @@ footer {
     & hr {
     border-bottom: solid 1px #FFF;
 }
+    & a {
+    color: white;
+    text-decoration: none;
+    }
+    & a:hover{
+    color: $amarillo;    
+    }
 }
 .copyright {
     background-color: $cfondo;
@@ -479,7 +507,13 @@ footer {
 }
     & img {
     width: 100%;
+    border: solid 1px $amarillo;
     margin-bottom: 20px;
+    transition: transform .2s;
+}
+    & img:hover {
+transform: scale(1.1);
+
 }
 }
 
